@@ -16,7 +16,7 @@ steps:
         from_secret: dockerhub_username
       password:
         from_secret: dockerhub_password
-    tag: latest
+    tag: latest-linux-arm64
 ---
 kind: pipeline
 type: docker
@@ -35,7 +35,7 @@ steps:
         from_secret: dockerhub_username
       password:
         from_secret: dockerhub_password
-    tag: latest
+    tag: latest-linux-amd64
 ---
 kind: pipeline
 type: docker
